@@ -1,0 +1,80 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container {
+    width: 70%;
+    height: 340px;
+    background: thistle;
+    margin: 90px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-arr,
+.right-arr {
+    position: absolute;
+    padding: 4px;
+    transition: all .4s;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    top: 50%;
+    font-size: 32px;
+    font-weight: 600;
+    color: #212121;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.left-arr:hover,
+.right-arr:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.left-arr {
+    left: 3%;
+}
+
+.right-arr {
+    right: 3%;
+}
+
+.show {
+    position: relative;
+    width: 300%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    transition: all .4s;
+}
+
+.box {
+    width: 33.333%;
+    height: 100%;
+}
+
+.box:nth-child(1) {
+    background: url(img/lauren-mancke-60627.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box:nth-child(2) {
+    background: url(img/tumblr_o3rm3lahXv1ta0hnbo1_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box:nth-child(3) {
+    background: url(img/tumblr_oqft1yEphW1ta0hnbo1_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
